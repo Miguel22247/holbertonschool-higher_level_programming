@@ -6,17 +6,31 @@
  */
 int is_palindrome(listint_t **head)
 {
-	unsigned int len = 1;
-	listint_t *temp;
+	listint_t *temp = *head, *temp2 = *head;
+	int array[5000];
+	int len, j, i;
 
-	if (head == NULL|| *head == NULL)
+	if (!head)
+		return (0);
+	if (!*head || ((*head)->next == NULL))
 		return (1);
 
-	temp = *head;
-	while (temp) /* get len of list */
+	for (len = 0; temp2->next != NULL; len++)
 	{
-		temp = temp->next;
-		len++;
+		temp2 = temp2->next;
 	}
-	return (0);
+	for (i = 0; i <= len; i++)
+	{
+		array[i] = temp->n;
+		temp = temp->next;
+	}
+
+	for (j = 0, len; j < len; j++, len--)
+	{
+		if (array[j] != array[len])
+		{
+			return (0);
+		}
+	}
+	return (1);
 }
