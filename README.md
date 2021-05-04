@@ -1,4 +1,4 @@
-# holbertonschool-higher_level_programming
+# Holbertonschool-higher_level_programming
 The first repository writed in high level languages like python
 
 ## 0x00. Python - Hello, World
