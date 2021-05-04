@@ -2,35 +2,21 @@
 /**
  * is_palindrome - checks if palindrome
  * @head: head of node
- * Return: number of nodes
+ * Return: 0 if not, 1 if is
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *temp = *head, *temp2 = *head;
-	int array[5000];
-	int len, j, i;
+	unsigned int len = 1;
+	listint_t *temp;
 
-	if (!head)
-		return (0);
-	if (!*head || ((*head)->next == NULL))
+	if (head == NULL|| *head == NULL)
 		return (1);
 
-	for (len = 0; temp2->next != NULL; len++)
+	temp = *head;
+	while (temp) /* get len of list */
 	{
-		temp2 = temp2->next;
-	}
-	for (i = 0; i <= len; i++)
-	{
-		array[i] = temp->n;
 		temp = temp->next;
+		len++;
 	}
-
-	for (j = 0, len; j < len; j++, len--)
-	{
-		if (array[j] != array[len])
-		{
-			return (0);
-		}
-	}
-	return (1);
+	return (0);
 }
