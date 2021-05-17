@@ -13,3 +13,5 @@ Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_program
 Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_programming/tree/main/0x03-python-data_structures)
 ### 0x04. Python - More Data Structures: Set, Dictionary
 Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_programming/tree/main/0x04-python-more_data_structures)
+### 0x05. Python - Exceptions
+Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_programming/tree/main/0x05-python-exceptions)
