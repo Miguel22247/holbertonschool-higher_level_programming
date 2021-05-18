@@ -15,3 +15,5 @@ Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_program
 Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_programming/tree/main/0x04-python-more_data_structures)
 ### 0x05. Python - Exceptions
 Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_programming/tree/main/0x05-python-exceptions)
+### 0x06. Python - Classes and Objects
+Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_programming/tree/main/0x06-python-classes)
