@@ -13,7 +13,7 @@ def text_indentation(text):
 
     if type(text) is not str:
         raise TypeError('text must be a string')
-    
+
     l = len(text)
     i = 0
     if text[0] == " ":
@@ -38,4 +38,3 @@ def text_indentation(text):
         else:
             print("{}".format(text[i]), end="")
         i += 1
-    

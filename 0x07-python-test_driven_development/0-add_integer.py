@@ -4,6 +4,7 @@ Prototype: def add_integer(a, b=98):
 a and b must be integers or floats, otherwise raise a TypeError exception.
 Returns an integer: the addition of a and b."""
 
+
 def add_integer(a, b=98):
     """b is always 98 unless specified otherwise
     a and b must be first casted to integers if they are float
