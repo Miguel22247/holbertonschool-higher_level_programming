@@ -2,7 +2,7 @@
 """
 Module that defines a function that print a square using #
 size must be an integer
-if size is less than 0, raise a valueerror
+if size is less than 0, raise a ValueError
 """
 
 
