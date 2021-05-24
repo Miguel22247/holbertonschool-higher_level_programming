@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-"""empty class Rectangle that defines a rectangle"""
+"""
+Module for task 0
+"""
 
 
 class Rectangle:
-    """empty class Rectangle that defines a rectangle"""
+    """empty class Rectangle"""
     pass
