@@ -1,6 +1,5 @@
-#!/usr/bin/python3
 """
-Module for task 4
+Module for task 4.
 """
 
 
@@ -60,7 +59,7 @@ class Rectangle:
             return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
-        """Prints the rectangle using #"""
+        """Prints the rectangle with #'s"""
         sq = ""
         if self.__width != 0 and self.__height != 0:
             for i in range(self.__height):
@@ -71,5 +70,5 @@ class Rectangle:
         return sq
 
     def __repr__(self):
-        """Return the rectangle"""
-        return 'Rectangle({}, {}'.format(self.__width, self.__height)
+        """Return rectangle"""
+        return 'Rectangle({}, {})'.format(self.__width, self.__height)
