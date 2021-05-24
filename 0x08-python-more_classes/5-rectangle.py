@@ -69,7 +69,7 @@ class Rectangle:
                 if i < self.__height - 1:
                     sq += "\n"
         return sq
-    
+
     def __repr__(self):
         """Return the rectangle"""
         return 'Rectangle({}, {}'.format(self.__width, self.__height)
@@ -77,4 +77,3 @@ class Rectangle:
     def __del__(self):
         """Print message when instance deleted"""
         print("Bye rectangle...")
-    
