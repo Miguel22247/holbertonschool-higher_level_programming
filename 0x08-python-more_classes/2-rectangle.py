@@ -1,10 +1,11 @@
+#!/usr/bin/python3
 """
 Module for task 2. Area and Perimeter
 """
 
 
 class Rectangle:
-    """Defines a Rectangle"""
+    """Class that defines a Rectangle"""
 
     def __init__(self, width=0, height=0):
         """Instantiation attributes"""
