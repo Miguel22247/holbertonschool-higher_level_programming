@@ -7,6 +7,8 @@ Module for task 6
 class Rectangle:
     """Defines a Rectangle"""
 
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """Instantiation attributes"""
         if type(width) is not int:
@@ -19,6 +21,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__width = width
         self.__height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def height(self):
@@ -72,7 +75,7 @@ class Rectangle:
 
     def __repr__(self):
         """Return the rectangle"""
-        return 'Rectangle({}, {}'.format(self.__width, self.__height)
+        return 'Rectangle({}, {})'.format(self.__width, self.__height)
 
     def __del__(self):
         """Print message when instance deleted"""
