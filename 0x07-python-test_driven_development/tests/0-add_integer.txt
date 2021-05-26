@@ -4,7 +4,7 @@ The ``0-add_integer`` module
 
 Using ``add_integer``
 -------------------
-This is a doctest based on 0-add_integer.py
+This is a test document based on 0-add_integer.py
 Each '>>' line is run as if in a python shell, and counts as a test.
 The next line, if not '>>' is the expected output of the previous line.
 If anything doesn't match exactly (including trailing spaces), the test fails.

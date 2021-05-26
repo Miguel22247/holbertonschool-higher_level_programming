@@ -3,7 +3,7 @@ The ``2-matrix_divided`` module
 
 Using ``matrix_divided``
 -------------------
-This is a doctest based on 2-matrix_divided.py
+This is a test document based on 2-matrix_divided.py
 Each '>>' line is run as if in a python shell, and counts as a test.
 The next line, if not '>>' is the expected output of the previous line.
 If anything doesn't match exactly (including trailing spaces), the test fails.
@@ -70,25 +70,3 @@ Test: matrix with lists of integers of different sizes. Div as positive integer
         Traceback (most recent call last):
         ...
         TypeError: Each row of the matrix must have the same size
-
-Test: matrix with lists of positive integers. Div as 0
-        >>> matrix_divided([[1, 2], [3, 4]], 0)
-        Traceback (most recent call last):
-        ...
-        ZeroDivisionError: division by zero
-
-Test: matrix with lists of positive integers. Div as float
-        >>> matrix_divided([[1, 2], [3, 4]], 100.3)
-        [[0.01, 0.02], [0.03, 0.04]]
-
-Test: matrix with lists of positive integers. Div as string
-        >>> matrix_divided([[1, 2], [3, 4]], "Hello")
-        Traceback (most recent call last):
-        ...
-        TypeError: div must be a number
-
-Test: matrix with matrix and list of positive integers. Div as integer
-        >>> matrix_divided([[[1, 2, 3], [4, 5, 6]], [2, 2]], "Hello")
-        Traceback (most recent call last):
-        ...
-        TypeError: matrix must be a matrix (list of lists) of integers/floats

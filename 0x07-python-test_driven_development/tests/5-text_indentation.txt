@@ -3,7 +3,7 @@ The ``5-text_indentation`` module
 
 Using ``text_indentation``
 -------------------
-This is a doctest based on 5-text_indentation.py
+This is a test document based on 5-text_indentation.py
 Each '>>' line is run as if in a python shell, and counts as a test.
 The next line, if not '>>' is the expected output of the previous line.
 If anything doesn't match exactly (including trailing spaces), the test fails.
@@ -97,27 +97,3 @@ Test: two strings
         Traceback (most recent call last):
         ...
         TypeError: text_indentation() takes 1 positional argument but 2 were given
-
-Test: text as string and second argument as integer
-        >>> text_indentation("""Lorem""", 4)
-        Traceback (most recent call last):
-        ...
-        TypeError: text_indentation() takes 1 positional argument but 2 were given
-
-Test: text as integer and second argument as string
-        >>> text_indentation(4, """Lorem""")
-        Traceback (most recent call last):
-        ...
-        TypeError: text_indentation() takes 1 positional argument but 2 were given
-
-Test: text as 'None'
-        >>> text_indentation(None)
-        Traceback (most recent call last):
-        ...
-        TypeError: text must be a string
-
-Test: empty text
-        >>> text_indentation()
-        Traceback (most recent call last):
-        ...
-        TypeError: text_indentation() missing 1 required positional argument: 'text'
