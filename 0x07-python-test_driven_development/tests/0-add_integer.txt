@@ -44,24 +44,6 @@ Test: only a as float
         >>> add_integer(100.3)
         198
 
-Test: a as positive integer, b as string
-        >>> add_integer(4, "School")
-        Traceback (most recent call last):
-        ...
-        TypeError: b must be an integer
-
-Test: a as string, b as positive integer
-        >>> add_integer("School", 4)
-        Traceback (most recent call last):
-        ...
-        TypeError: a must be an integer
-
-Test: only a as string
-        >>> add_integer("School")
-        Traceback (most recent call last):
-        ...
-        TypeError: a must be an integer
-
 Test: a as exponential, b as positive integer
         >>> add_integer(1e100, 2)
         10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815106
@@ -122,44 +104,3 @@ Test: a as positive integer, b as symbol
         ...
         SyntaxError: invalid syntax
 
-Test: only a as symbol
-        >>> add_integer(*)
-        Traceback (most recent call last):
-        ...
-        SyntaxError: invalid syntax
-
-Test: pass three arguments
-        >>> add_integer(1, 2, 3)
-        Traceback (most recent call last):
-        ...
-        TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
-
-Test: a as list, b as positive integer
-        >>> add_integer([1, 2], 5)
-        Traceback (most recent call last):
-        ...
-        TypeError: a must be an integer
-
-Test: a as NaN, b as positive integer
-        >>> add_integer(float('NaN'), 5)
-        Traceback (most recent call last):
-        ...
-        ValueError: cannot convert float NaN to integer
-
-Test: a as inf, b as positive integer
-        >>> add_integer(float('inf'), 10)
-        Traceback (most recent call last):
-        ...
-        OverflowError: cannot convert float infinity to integer
-
-Test: a as integer, b as boolean
-        >>> add_integer(10, True)
-        Traceback (most recent call last):
-        ...
-        TypeError: b must be an integer
-
-Test: a as boolean, b as integer
-        >>> add_integer(True, 10)
-        Traceback (most recent call last):
-        ...
-        TypeError: a must be an integer
