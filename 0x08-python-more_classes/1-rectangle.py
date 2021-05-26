@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module for task 1. Real definition of a rectangle
+Module for task 1. definition of a rectangle
 """
 
 
@@ -27,7 +27,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """Setter to set height"""
+        """Setter to set the height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
