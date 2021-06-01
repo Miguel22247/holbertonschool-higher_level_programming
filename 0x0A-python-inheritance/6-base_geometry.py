@@ -3,8 +3,8 @@
 
 
 class BaseGeometry:
-	"""class that contains function area"""
+    """class that contains function area"""
 
-	def area(self):
-		"""Function not implemented"""
+    def area(self):
+        """Function not implemented"""
         raise Exception("area() is not implemented")
