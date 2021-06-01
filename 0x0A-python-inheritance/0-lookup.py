@@ -5,5 +5,5 @@
 
 
 def lookup(obj):
-	"""return the list"""
-	return dir(obj)
+    """return the list"""
+    return dir(obj)

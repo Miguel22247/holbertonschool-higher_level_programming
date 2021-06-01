@@ -3,9 +3,8 @@
 
 
 class MyList(list):
-	"""prints the list sorted"""
-	
-	def print_sorted(self):
-
-		if issubclass(MyList, list):
-			print(sorted(list))
+    """prints the list sorted"""
+    
+    def print_sorted(self):
+        """print the list sorted"""
+        print(sorted(list))
