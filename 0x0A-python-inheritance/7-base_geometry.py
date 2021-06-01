@@ -3,18 +3,18 @@
 
 
 class BaseGeometry:
-	"""class that contains function area"""
+    """class that contains function area"""
 
-	def area(self):
-		"""Function not implemented"""
+    def area(self):
+        """Function not implemented"""
 
         raise Exception("area() is not implemented")
 
-	def integer_validator(self, name, value):
-		"""Function not implemented"""
+    def integer_validator(self, name, value):
+        """Function not implemented"""
 
-	if type(value) is not int:
-		raise TypeError(name + "must be an integer")
+    if type(value) is not int:
+        raise TypeError(name + "must be an integer")
 
-	if value <= 0:
-		raise ValueError(name + "must be greater than 0")
+    if value <= 0:
+        raise ValueError(name + "must be greater than 0")
