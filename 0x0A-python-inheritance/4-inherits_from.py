@@ -5,7 +5,11 @@
 def inherits_from(obj, a_class):
     """Function that inherits"""
 
-    if type(obj) is a_class or not isinstance(obj, a_class):
+    if type(obj) is a_class:
         return True
     else:
-        return False
+        return isinstance(obj, a_class)
+
+"""form that doesn't pass the checker 
+if type(obj) is a_class or not isinstance(obj, a_class):
+"""
