@@ -1,34 +1,28 @@
->>> MyList = __import__('1-my_list').MyList
->>> list = MyList()
+    >>> MyList = __import__('1-my_list').MyList
 
+Now use it:
 
->>> print(list)
-[]
->>> list.print_sorted()
-[]
+Basic MyList usage (pos, neg, zero):
+    >>> my_list = MyList()
+    >>> my_list.append(-1)
+    >>> my_list.append(4)
+    >>> my_list.append(3)
+    >>> my_list.append(0)
+    >>> print(my_list)
+    [-1, 4, 3, 0]
 
+Basic print_sorted usage:
+    >>> my_list.print_sorted()
+    [-1, 0, 3, 4]
 
->>> list.append(1)
->>> list.append(24)
->>> list.append(5)
->>> list.append(3)
->>> print(list)
-[1, 24, 5, 3]
+Big int MyList usage:
+    >>> my_list = MyList()
+    >>> my_list.append(999999999999)
+    >>> my_list.append(-1)
+    >>> my_list.append(0)
+    >>> print(my_list)
+    [999999999999, -1, 0]
 
-
->>> list.print_sorted()
-[1, 3, 5, 20]
-
-
->>> list.append(-5)
->>> print(list)
-[1, 20, 5, 3, -5]
->>> list.print_sorted()
-[-5, 1, 3, 5, 22]
-
-
->>> new_list = list()
->>> new_list.print_sorted()
-Traceback (most recent call last):
-    ...
-AttributeError: 'list' object has no attribute 'print_sorted'
+Big int print_sorted usage:
+    >>> my_list.print_sorted()
+    [-1, 0, 999999999999]
