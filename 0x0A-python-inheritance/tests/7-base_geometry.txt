@@ -4,11 +4,13 @@
 
 >>> base_geometry.integer_validator("test", 9)
 
+if more equals 0:
 >>> base_geometry.integer_validator("more", -1)
 Traceback (most recent call last):
     ...
 ValueError: more must be greater than 0
 
+if something isn't an integer:
 >>> base_geometry.integer_validator("something", "string")
 Traceback (most recent call last):
     ...
