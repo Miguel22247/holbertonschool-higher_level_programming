@@ -3,7 +3,7 @@
 
 
 class BaseGeometry:
-    """class that contains function area"""
+    """Empty class"""
 
     def area(self):
         """Function not implemented"""
