@@ -42,11 +42,11 @@ class Square:
         self.__position = value
 
     def area(self):
-        """Public instance method that returns the current square area"""
+        """Public instance that returns the  square area"""
         return self.__size * self.__size
 
     def my_print(self):
-        """Public instance method that prints the square with the char #"""
+        """Public instance that prints the square with the char #"""
         if self.__size == 0:
             print("")
             return
