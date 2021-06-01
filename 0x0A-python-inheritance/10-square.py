@@ -4,6 +4,7 @@
 
 Rectangle = __import__('9-rectangle').Rectangle
 
+
 class Square(Rectangle):
     """Square data that inherits from Rectangle"""
 
@@ -13,6 +14,6 @@ class Square(Rectangle):
         self.__size = size
 
     def area(self):
-         """Method to calculate area of the square"""
+        """Method to calculate area of the square"""
 
-         return self.__size * self.__size
+        return self.__size * self.__size
