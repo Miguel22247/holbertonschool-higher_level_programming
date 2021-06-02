@@ -3,5 +3,7 @@
 
 
 def append_write(filename="", text=""):
+    """A function that appends a file"""
+    
     with open(filename, mode="a", encoding="utf-8") as appendFile:
         appendFile.write(text)
