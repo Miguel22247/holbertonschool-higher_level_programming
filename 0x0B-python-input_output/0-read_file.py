@@ -5,5 +5,5 @@
 def read_file(filename=""):
     """Read the file on UTF-8"""
 
-    with open(filename, mode="r", enconding="utf-8") as readFile:
+    with open(filename, mode='r', enconding='utf-8') as readFile:
         print(readFile.read(), end="")
