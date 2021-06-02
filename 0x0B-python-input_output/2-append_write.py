@@ -5,4 +5,3 @@
 def append_write(filename="", text=""):
     with open(filename, mode="a", encoding="utf-8") as appendFile:
         appendFile.write(text)
-        return len(text)
