@@ -4,7 +4,6 @@
 
 def write_file(filename="", text=""):
 
-
-    with open(filename, mode ="w", enconding="utf-8") as writeFile:
+    with open(filename, mode="w", enconding="utf-8") as writeFile:
         writeFile.write(text)
         return len(text)
