@@ -22,7 +22,7 @@ def pascal_triangle(n):
         for item in range(1, element):
             row[0] = 1
             row[element] = 1
-            row[item] = res[element -1][item] + res[element - 1][item - 1]
+            row[item] = res[element - 1][item] + res[element - 1][item - 1]
         res.append(row)
 
     return res
