@@ -4,7 +4,7 @@ import json
 
 
 class Base:
-	"""Base class for other shapes"""
+	"""Base class for other shapes in this project"""
 	__nb_objects = 0
 
 	def __init__(self, id=None):
