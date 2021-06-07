@@ -82,10 +82,13 @@ class Rectangle(Base):
                 print((self.__x * " ") + (self.__width * '#'))
 
     def __str__(self):
-        """Returns formatted info"""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, 
-                                                        self.__y, self.__width, 
-                                                        self.__height)
+        """Return a message"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                       self.__x,
+                                                       self.__y,
+                                                       self.__width,
+                                                       self.__height)
+
 
     def update(self, *args, **kwargs):
         """This function assigns an argument to each attribute"""
