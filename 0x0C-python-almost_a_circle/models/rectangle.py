@@ -6,13 +6,13 @@ from models.base import Base
 class Rectangle(Base):
     """Class that prints a rectangle"""
 
-    def __init__(self, width, height, x=0, y=0, id = None):
+    def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
-    
+
     # width
     @property
     def width(self):
@@ -30,7 +30,7 @@ class Rectangle(Base):
     @property
     def height(self):
         return self.__height
-    
+
     @width.setter
     def height(self, value):
         if type(value) is not int:
@@ -38,13 +38,13 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("width must be >= 0")
         self.__height = value
-    
+
     # X
-       # height
+    # height
     @property
     def x(self):
         return self.__height
-    
+
     @x.setter
     def x(self, value):
         if type(value) is not int:
@@ -70,25 +70,22 @@ class Rectangle(Base):
         """Returns the area of a rectangle"""
 
         return self.__width * self.__height
-    
-    def display (self):
+
+    def display(self):
         """Return printed rectangle with #. Y is newline, X is space"""
 
         if self.__y is not 0:
             for newline in range(self.__y):
                 print()
-            
+  
             for row in range(self.__height):
                 print((self.__x * " ")+ (self.__width * '#'))
-    
+
     def __str__(self):
         """Returns formatted info"""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-                                                        self.__x,
-                                                        self.__y,
-                                                        self.__width,
-                                                        self.__height)
-    
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y,
+                                                        self.__width, self.__height)
+
     def update(self, *args, **kwargs):
         """This function assigns an argument to each attribute"""
         if len(kwargs) != 0:
@@ -110,4 +107,3 @@ class Rectangle(Base):
         """Returns dict representation"""
         return {'x': self.__x, 'y': self.__y, 'id': self.id,
                 'height': self.__height, 'width': self.__width}
-    
