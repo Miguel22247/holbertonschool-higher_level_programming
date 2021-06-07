@@ -77,14 +77,15 @@ class Rectangle(Base):
         if self.__y is not 0:
             for newline in range(self.__y):
                 print()
-  
+
             for row in range(self.__height):
-                print((self.__x * " ")+ (self.__width * '#'))
+                print((self.__x * " ") + (self.__width * '#'))
 
     def __str__(self):
         """Returns formatted info"""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y,
-                                                        self.__width, self.__height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, 
+                                                        self.__y, self.__width, 
+                                                        self.__height)
 
     def update(self, *args, **kwargs):
         """This function assigns an argument to each attribute"""
