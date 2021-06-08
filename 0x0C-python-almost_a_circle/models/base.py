@@ -20,8 +20,7 @@ class Base:
         """Returns a JSON string representation"""
         if list_dictionaries is None or len(list_dictionaries) is 0:
             return "[]"
-        else:
-            return json.dumps(list_dictionaries)
+        return json.dumps(list_dictionaries)
 
     @staticmethod
     def from_json_string(json_string):
@@ -33,10 +32,10 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """Returns an instance with all attrs already set"""
-        if cls.__name__ == "Rectangle":
-            temp = cls(1, 1)
-        if cls.__name__ == "Square":
-            temp = cls(1)
+        if cls.__name__ is "Rectangle":
+            temp = cls(1, 2)
+        if cls.__name__ is "Square":
+            temp = cls(3)
         # update temp with obj func update()
         temp.update(**dictionary)
         return temp
