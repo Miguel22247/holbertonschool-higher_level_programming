@@ -2,7 +2,6 @@
 """class base"""
 import json
 import os
-import csv
 
 
 class Base:
