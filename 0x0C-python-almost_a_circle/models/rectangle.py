@@ -7,10 +7,9 @@ class Rectangle(Base):
     """Build a Rectangle"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Rectanlge Class constructor"""
+        """Rectangle Class constructor"""
         # Call the super class with id
         super().__init__(id)
-
 
         # Width:
         if type(width) is not int:
@@ -19,6 +18,7 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         else:
             self.__width = width
+
         # Height:
         if type(height) is not int:
             raise TypeError("height must be an integer")
@@ -141,10 +141,6 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """Returns the dict representation of a Rectangle"""
-        dic = {}
-        dic['id'] = self.id
-        dic['width'] = self.__width
-        dic['height'] = self.__height
-        dic['x'] = self.__x
-        dic['y'] = self.__y
-        return dic
+
+        return {'x': self.__x, 'y': self.__y, 'id': self.id,
+                'height': self.__height, 'width': self.__width}
