@@ -40,12 +40,12 @@ class Rectangle(Base):
     # Getter and Setter for width
     @property
     def width(self):
-        """Getter for width"""
+        """return the width"""
         return self.__width
 
     @width.setter
     def width(self, width):
-        """Setter for width"""
+        """checks the width"""
         if type(width) is not int:
             raise TypeError("width must be an integer")
         elif width <= 0:
@@ -56,12 +56,12 @@ class Rectangle(Base):
     # Getter and Setter for height
     @property
     def height(self):
-        """Getter for height"""
+        """return for height"""
         return self.__height
 
     @height.setter
     def height(self, height):
-        """Setter for height"""
+        """checks the height"""
         if type(height) is not int:
             raise TypeError("height must be an integer")
         elif height <= 0:
@@ -72,12 +72,12 @@ class Rectangle(Base):
     # Getter and Setter for x
     @property
     def x(self):
-        """Getter for x"""
+        """return for x"""
         return self.__x
 
     @x.setter
     def x(self, x):
-        """Setter for x"""
+        """checks the x"""
         if type(x) is not int:
             raise TypeError("x must be an integer")
         elif x < 0:
@@ -88,12 +88,12 @@ class Rectangle(Base):
     # Getter and Setter for y
     @property
     def y(self):
-        """Getter for y"""
+        """return for y"""
         return self.__y
 
     @y.setter
     def y(self, y):
-        """Setter for y"""
+        """checks the y"""
         if type(y) is not int:
             raise TypeError("y must be an integer")
         elif y < 0:
@@ -106,7 +106,7 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        """Print the shape with character '#'"""
+        """Print the rectangle with character '#'"""
         for a in range(0, self.__y):
             print("")
         for i in range(0, self.__height):
