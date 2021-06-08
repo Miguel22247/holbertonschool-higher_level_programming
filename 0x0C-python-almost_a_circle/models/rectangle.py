@@ -148,3 +148,4 @@ class Rectangle(Base):
         dictionary['height'] = self.__height
         dictionary['x'] = self.__x
         dictionary['y'] = self.__y
+        return dictionary
