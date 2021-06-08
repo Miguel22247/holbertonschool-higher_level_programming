@@ -9,20 +9,18 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
+
 class TestSquare(unittest.TestCase):
-    """Testing Square
-    """
+    """Testing Square"""
 
     def tearDown(self):
-        """Tears down obj count
-        """
+        """Tears down obj count"""
 
         Base._Base__nb_objects = 0
         self.assertEqual(Base._Base__nb_objects, 0)
 
     def test_instance(self):
-        """Test instantiation
-        """
+        """Test instantiation"""
 
         o1 = Square(5)
         o2 = Square(id="hello", size=3)
@@ -46,8 +44,7 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(o2._Base__nb_objects, 3)
 
     def test_area(self):
-        """Testing area()
-        """
+        """Testing area()"""
 
         o1 = Square(5)
         o2 = Square(999, 0, 0, "helloo")
@@ -58,8 +55,7 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(o3.area(), 9)
 
     def test_display(self):
-        """Testing display()
-        """
+        """Testing display()"""
 
         o1 = Square(4)
         o2 = Square(id="hello", size=3, x=1, y=0)
@@ -73,8 +69,7 @@ class TestSquare(unittest.TestCase):
             self.assertEqual(fakeOutput.getvalue(), ' ###\n ###\n ###\n')
 
     def test_str(self):
-        """Testing __str__()
-        """
+        """Testing __str__()"""
 
         o1 = Square(5)
         o2 = Square(3, 2)
@@ -87,8 +82,7 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(o4.__str__(), '[Square] (hello) 1/0 - 3')
 
     def test_update(self):
-        """Testing update()
-        """
+        """Testing update()"""
 
         o1 = Square(5)
         o2 = Square(3, 2)
@@ -104,8 +98,7 @@ class TestSquare(unittest.TestCase):
             o4.update(x=9.5)
 
     def test_to_dictionary(self):
-        """Testing to_dictionary()
-        """
+        """Testing to_dictionary()"""
 
         o1 = Square(5)
         o2 = Square(5, 6)
