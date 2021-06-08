@@ -86,4 +86,3 @@ class Square(Rectangle):
         dictionary['x'] = self.__x
         dictionary['y'] = self.__y
         return dictionary
-		
