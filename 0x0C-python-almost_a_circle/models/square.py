@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""Class that prints a Square"""
+"""Square File - Inherits from Rectangle"""
 from models.rectangle import Rectangle
 
 
-class square(Rectangle):
+class Square(Rectangle):
+    """Build a Square"""
     def __init__(self, size, x=0, y=0, id=None):
         """Instantiation of Square"""
         super().__init__(size, size, x, y, id)
@@ -65,9 +66,10 @@ class square(Rectangle):
             raise ValueError("y must be >= 0")
         else:
             self.__y = y
+
     def update(self, *args, **kwargs):
         """That assigns an argument to each attribute"""
-        names = ["id", "width", "height", "x", "y"]
+        names = ["id", "size", "x", "y"]
         if args and len(args) != 0:
             for i in range(len(args)):
                 setattr(self, names[i], args[i])
@@ -78,11 +80,9 @@ class square(Rectangle):
 
     def to_dictionary(self):
         """Returns the dict representation of a Square"""
-
         dictionary = {}
         dictionary['id'] = self.id
         dictionary['size'] = self.__width
         dictionary['x'] = self.__x
         dictionary['y'] = self.__y
         return dictionary
-
