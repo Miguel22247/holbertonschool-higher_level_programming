@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Square File - Inherits from Rectangle"""
+"""Class that builds a Square"""
 from models.rectangle import Rectangle
 
 
@@ -22,12 +22,12 @@ class Square(Rectangle):
 
     @property
     def size(self):
-        """Getter for size"""
+        """return size"""
         return self.__width
 
     @size.setter
     def size(self, size):
-        """Setter for size"""
+        """checks the size"""
         if type(size) is not int:
             raise TypeError("width must be an integer")
         elif size <= 0:
@@ -35,15 +35,15 @@ class Square(Rectangle):
         else:
             self.__width = size
 
-    # Getter and Setter for x
+    # Getter and checks the x
     @property
     def x(self):
-        """Getter for x"""
+        """return x"""
         return self.__x
 
     @x.setter
     def x(self, x):
-        """Setter for x"""
+        """checks the x"""
         if type(x) is not int:
             raise TypeError("x must be an integer")
         elif x < 0:
@@ -51,15 +51,15 @@ class Square(Rectangle):
         else:
             self.__x = x
 
-    # Getter and Setter for y
+    # Getter and checks the y
     @property
     def y(self):
-        """Getter for y"""
+        """return y"""
         return self.__y
 
     @y.setter
     def y(self, y):
-        """Setter for y"""
+        """checks the y"""
         if type(y) is not int:
             raise TypeError("y must be an integer")
         elif y < 0:
