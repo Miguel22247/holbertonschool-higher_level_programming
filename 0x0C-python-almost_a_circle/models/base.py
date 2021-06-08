@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """class base"""
 import json
+import os
 import csv
 
 
@@ -55,15 +56,14 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """Returns a list of instances"""
-        res = []
-        with open(cls.__name__ + ".json", mode="r") as read_file:
-            text = read_file.read()
-        # Converting str to list
-        text = cls.from_json_string(text)
-        for item in text:
-            # Formatting dicts into str format
-            if type(item) == dict:
-                res.append(cls.create(**item))
-            else:
-                res.append(item)
-        return res
+        filename = cls.__name__ + '.json'
+        my_list = []
+        if os.path.exists(filename):
+            with open(filename, 'r') as my_file:
+                File = my_file.read()
+                new_list = cls.from_json_string(File)
+                for i in new_list:
+                    my_list.append(cls.create(**i))
+            return my_list
+        else:
+            return []`
