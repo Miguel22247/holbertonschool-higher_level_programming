@@ -12,7 +12,7 @@ from models.square import Square
 class TestingRectangle(unittest.TestCase):
     """class for Test Rectangle"""
 
-    # RECTANGLE WIDTH
+    # RECTANGLE WIDTH CHECKER
     def test0_width_few_args(self):
             """Width Rectangle"""
             Base._Base__nb_objects = 0
