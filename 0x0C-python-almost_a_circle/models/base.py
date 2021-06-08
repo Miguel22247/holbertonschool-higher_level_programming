@@ -66,4 +66,4 @@ class Base:
                     my_list.append(cls.create(**i))
             return my_list
         else:
-            return []`
+            return []
