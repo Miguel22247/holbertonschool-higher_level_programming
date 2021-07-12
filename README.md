@@ -19,3 +19,7 @@ Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_program
 Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_programming/tree/main/0x06-python-classes)
 ### 0x07. Python - Test-driven development
 Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_programming/tree/main/0x07-python-test_driven_development)
+### 0x08. Python - More Classes
+Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_programming/tree/main/0x08-python-more_classes)
+### 0x09. Python - Everything is an object
+Repo: [Here](hhttps://github.com/Miguel22247/holbertonschool-higher_level_programming/tree/main/0x09-python-everything_is_object)
