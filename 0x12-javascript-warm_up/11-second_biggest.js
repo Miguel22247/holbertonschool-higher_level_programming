@@ -1,9 +1,10 @@
 #!/usr/bin/node
+const arg = process.argv;
 const ArgList = [];
-process.argv.forEach((val, index) => {
+arg.forEach((val, index) => {
   ArgList[index] = `${val}`;
 });
-if (ArgList <= 3) {
+if (ArgList.length <= 3) {
   console.log('0');
 } else {
   ArgList.sort(function (a, b) { return a - b; });
