@@ -1,9 +1,10 @@
 #!/usr/bin/node
 // This script prints using arguments
+const argv_length = process.argv.length;
 
-if (process.argv.length == 0) {
+if (argv_length < 3) {
 	console.log ("No arguments");
-} else if (process.argv.length === 1) {
+} else if (argv_length === 1) {
 	console.log ("Argument found");
 } else {
 	console.log("Argument found")
