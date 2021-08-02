@@ -7,7 +7,9 @@ argv.forEach((val, index) => {
 });
 const number = Number(`${arg[2]}`);
 if (isNaN(number)) {
-	console.log('Missing size');
+  console.log('Missing size');
 } else {
-	console.log(square.repeat(number));
+  for (i = 0; i < number; i++){
+   console.log(square.repeat(number));
+}
 }
