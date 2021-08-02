@@ -1,5 +1,6 @@
 #!/usr/bin/node
 const arg = [];
+const { argv } = require('process');
 let x;
 let square = 'X';
 argv.forEach((val, index) => {
