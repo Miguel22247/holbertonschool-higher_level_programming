@@ -3,11 +3,11 @@
 const ArgCount = [];
 let ind;
 process.argv.forEach((val, index) => {
-    ArgCount[index] = `${val}`;
-    ind  = `${index}`;
+  ArgCount[index] = `${val}`;
+  ind = `${index}`;
 });
 if (ind < 2) {
-    console.log ('No argument');
+  console.log('No argument');
 } else {
-    console.log (ArgCount[2]);
+  console.log(ArgCount[2]);
 }
