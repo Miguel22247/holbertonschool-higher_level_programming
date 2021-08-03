@@ -5,6 +5,9 @@ class Rectangle {
         this.width = w;
         this.height = h;
       }
+      if (!w || !h) {
+        return;
+      }
     }
   
   print () {
