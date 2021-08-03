@@ -9,7 +9,7 @@ class Square extends Squeare5 {
         console.log(Print.repeat(this.height));
       }
     } else {
-      for (let x = 0; x < this.width; x++) {
+      for (let y = 0; y < this.width; y++) {
         console.log(c.repeat(this.width));
       }
     }
