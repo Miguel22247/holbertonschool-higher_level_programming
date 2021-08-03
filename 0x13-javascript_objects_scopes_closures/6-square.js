@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const Rectangle = require('./5-square');
+const Squeare5 = require('./5-square');
 
-class Square extends Square1 {
+class Square extends Squeare5 {
   charPrint (c) {
     const Print = 'X';
     if (!c) {
