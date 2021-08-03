@@ -4,5 +4,5 @@ exports.esrever = function (list) {
   while (list.length) {
       NewList.push(list.pop());
    }
-  return NewList;
+  return (NewList);
 }	
