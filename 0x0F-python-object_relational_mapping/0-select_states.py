@@ -9,7 +9,8 @@ if __name__ == '__main__':
     MY_DBNAME = argv[3]
     try:
         databases = MySQLdb.\
-            connect(myhost = MY_HOST, user = MY_USER, password = MY_PSWD)
+            connect(myhost=MY_HOST, user=MY_USER, password=MY_PSWD, db=MY_DBNAME)
         cur = databases.cursor()
+        cur.execute("SELECT * FROM states ")
     except Exception as e:
         print("ERROR")
