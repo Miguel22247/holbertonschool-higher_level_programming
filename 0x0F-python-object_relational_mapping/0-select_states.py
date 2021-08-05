@@ -13,5 +13,10 @@ if __name__ == '__main__':
         cur = database.cursor()
         query = 'SELECT * FROM states ORDER BY id ASC'
         cur.execute(query)
+        row_query = cur.fetchall()
+        for row_query in rows:
+            print(row_query)
+        cur.close()
+        database.close()
     except Exception as excep:
         print("ERROR {}".format(excep))
