@@ -7,7 +7,7 @@ if __name__ == '__main__':
     MY_USER = argv[1]
     MY_PSWD = argv[2]
     MY_DB = argv[3]
-    db = MySQLdb.connect(host=MY_HOST, user=MY_USER, password=MY_PSWD, db=MY_DBN)
+    db = MySQLdb.connect(host=MY_HOST, user=MY_USER, password=MY_PSWD, db=MY_DB)
     cur = db.cursor()
     query = 'SELECT * FROM states ORDER BY id ASC'
     cur.execute(query)
