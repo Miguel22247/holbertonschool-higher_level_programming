@@ -12,5 +12,6 @@ if __name__ == '__main__':
             connect(myhost=MY_HOST, user=MY_USER, password=MY_PSWD, db=MY_DBNAME)
         cur = databases.cursor()
         cur.execute("SELECT * FROM states BY id ASC")
-    except Exception as e:
-        print("ERROR")
+        row
+    except Exception as excep:
+        print("ERROR {}".format(excep))
