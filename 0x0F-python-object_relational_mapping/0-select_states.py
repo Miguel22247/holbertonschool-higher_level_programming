@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """ Script that lists all states"""
+
+import MySQLdb
+from sys import argv
+
 if __name__ == '__main__':
-    import MySQLdb
-    from sys import argv
     HOST = 'localhost'
     PORT = 3306
     MY_USER = argv[1]
@@ -16,3 +18,4 @@ if __name__ == '__main__':
     row_query = cur.fetchall()
     for rq_print in row_query:
         print(rq_print)
+db.close()

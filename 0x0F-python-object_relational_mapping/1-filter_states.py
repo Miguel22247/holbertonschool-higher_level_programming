@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """ Script that lists all states starting with N"""
+
+import MySQLdb
+from sys import argv
+
 if __name__ == '__main__':
-    import MySQLdb
-    from sys import argv
+
     HOST = 'localhost'
     PORT = 3306
     MY_USER = argv[1]
