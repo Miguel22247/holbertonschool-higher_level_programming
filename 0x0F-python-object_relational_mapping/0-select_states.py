@@ -9,9 +9,8 @@ if __name__ == '__main__':
     MY_DBNAME = argv[3]
     try:
         databases = MySQLdb.\
-            connect(myhost=MY_HOST, user=MY_USER, password=MY_PSWD, db=MY_DBNAME)
+            connect(host=MY_HOST, user=MY_USER, password=MY_PSWD, db=MY_DBNAME)
         cur = databases.cursor()
         cur.execute("SELECT * FROM states BY id ASC")
-        row
     except Exception as excep:
         print("ERROR {}".format(excep))
