@@ -22,7 +22,7 @@ Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_program
 ### 0x08. Python - More Classes
 Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_programming/tree/main/0x08-python-more_classes)
 ### 0x09. Python - Everything is an object
-Repo: [Here](hhttps://github.com/Miguel22247/holbertonschool-higher_level_programming/tree/main/0x09-python-everything_is_object)
+Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_programming/tree/main/0x09-python-everything_is_object)
 ### 0x0A. Python - Inheritance
 Repo: [Here](https://github.com/Miguel22247/holbertonschool-higher_level_programming/tree/main/0x0A-python-inheritance)
 ### 0x0B. Python - Input/Output
