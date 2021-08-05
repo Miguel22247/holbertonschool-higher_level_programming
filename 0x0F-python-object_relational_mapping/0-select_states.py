@@ -9,8 +9,7 @@ if __name__ == '__main__':
     MY_DB = argv[3]
     db = MySQLdb.connect(host=MY_HOST, user=MY_USER, password=MY_PSWD, db=MY_DB)
     cur = db.cursor()
-    query = 'SELECT * FROM states ORDER BY id ASC'
-    cur.execute(query)
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
     row_query = cur.fetchall()
     for rq_print in row_query:
         print(rq_print)
