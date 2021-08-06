@@ -2,11 +2,10 @@
 """A script that lists all states"""
 
 if __name__ == '__main__':
-
     from sys import argv
     from model_state import Base, State
+    from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
-    from sqlalchemy import (create_engine)
 
     if len(argv) != 4:
         print("error")
@@ -16,7 +15,9 @@ if __name__ == '__main__':
         DB = argv[3]
         engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                                .format(USER, PASS, DB), pool_pre_ping=True)
-        Session = sessionmaker(bind=engine)
-        session = Session()
-        for states in session.query(State).order_by(State.id):
-            print("{}: {}".format(states.id, states.name))
+    Base.metadata.create_all(engine)
+
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    for states in session.query(State):
+        print("{}: {}".format(states.id, states.name))
