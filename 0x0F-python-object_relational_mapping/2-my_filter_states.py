@@ -19,6 +19,6 @@ if __name__ == '__main__':
     cur.execute(query)
     row_query = cur.fetchall()
     for rq_print in row_query:
-        if rq_print[1] == 'NAME':
+        if rq_print[1] == NAME:
             print(rq_print)
 db.close()
