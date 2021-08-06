@@ -11,14 +11,11 @@ if __name__ == '__main__':
         print("error")
     else:
         USER = argv[1]
-        PWD = argv[2]
+        PASS = argv[2]
         DB = argv[3]
         engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
-                                .format(USER, PWD, DB), pool_pre_ping=True)
-        
-        Base.metadata.create_all(engine)
-        
+                               .format(USER, PASS, DB), pool_pre_ping=True)
         Session = sessionmaker(bind=engine)
         session = Session()
-        for states in session.query(State):
-            print("{}: {}".format(states.id, states.name))
+        for instance in session.query(State).order_by(State.id):
+            print("{}: {}".format(instance.id, instance.name))
