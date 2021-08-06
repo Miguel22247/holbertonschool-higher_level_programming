@@ -2,7 +2,7 @@
 """A script that lists all states"""
 
 from model_state import State, Base
-from sqlalchemy import sessionmaker
+from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 
 if __name__ == '__main__':
