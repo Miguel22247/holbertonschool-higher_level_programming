@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """A script that lists all states"""
 
-from sys import argv
-from model_state import Base, State
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy import (create_engine)
-
 if __name__ == '__main__':
+
+    from sys import argv
+    from model_state import Base, State
+    from sqlalchemy.orm import sessionmaker
+    from sqlalchemy import (create_engine)
+
     if len(argv) != 4:
         print("error")
     else:
