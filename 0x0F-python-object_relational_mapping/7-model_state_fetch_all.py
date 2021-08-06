@@ -2,9 +2,9 @@
 """A script that lists all states"""
 
 from os import sys
-from model_state import State, Base
+from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import create_engine
+from sqlalchemy import (create_engine)
 
 if __name__ == '__main__':
     if len(sys.argv) != 4:
