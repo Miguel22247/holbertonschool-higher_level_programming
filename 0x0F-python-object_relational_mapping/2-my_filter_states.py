@@ -21,4 +21,5 @@ if __name__ == '__main__':
     for rq_print in row_query:
         if rq_print[1] == NAME:
             print(rq_print)
-db.close()
+    cur.close()
+    db.close()
