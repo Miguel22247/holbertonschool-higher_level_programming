@@ -4,8 +4,8 @@
 import MySQLdb
 from sys import argv
 
-if __name__ == '__main__':
-    HOST = 'localhost'
+if __name__ == "__main__":
+    HOST = "localhost"
     PORT = 3306
     MY_USER = argv[1]
     MY_PSWD = argv[2]
@@ -13,8 +13,9 @@ if __name__ == '__main__':
     db = MySQLdb.connect(host=HOST, user=MY_USER, password=MY_PSWD,
                          db=MY_DB, port=PORT)
     cur = db.cursor()
-    cur.execute("SELECT * FROM states ORDER BY id")
+    query = "SELECT * FROM states ORDER BY id"
+    cur.execute(query)
     row_query = cur.fetchall()
-    for rq_print in row_query:
-        print(rq_print)
+    for q_print in row_query:
+        print(q_print)
 db.close()
