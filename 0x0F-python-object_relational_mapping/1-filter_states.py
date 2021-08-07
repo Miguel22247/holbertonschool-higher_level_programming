@@ -16,8 +16,9 @@ if __name__ == '__main__':
     cur = db.cursor()
     query = 'SELECT * FROM states ORDER BY id'
     cur.execute(query)
-    row_query = cur.fetchall()
-    for rq_print in row_query:
-        if rq_print[1][0] == 'N':
-            print(rq_print)
-db.close()
+    rowquery = cur.fetchall()
+    for rqprint in rowquery:
+        if rqprint[1][0] == 'N':
+            print(rqprint)
+    cur.close()
+    db.close()
