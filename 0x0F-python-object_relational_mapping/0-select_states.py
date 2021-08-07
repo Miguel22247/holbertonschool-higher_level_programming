@@ -13,8 +13,7 @@ if __name__ == '__main__':
     db = MySQLdb.connect(host=HOST, user=MY_USER, password=MY_PSWD,
                          db=MY_DB, port=PORT)
     cur = db.cursor()
-    query = 'SELECT * FROM states ORDER BY id'
-    cur.execute(query)
+    cur.execute("SELECT * FROM states ORDER BY id")
     row_query = cur.fetchall()
     for rq_print in row_query:
         print(rq_print)
