@@ -15,7 +15,8 @@ if __name__ == "__main__":
     cur = db.cursor()
     query = "SELECT * FROM states ORDER BY id"
     cur.execute(query)
-    row_query = cur.fetchall()
-    for q_print in row_query:
-        print(q_print)
-db.close()
+    rowquery = cur.fetchall()
+    for qprint in rowquery:
+        print(qprint)
+    cur.close()
+    db.close()
