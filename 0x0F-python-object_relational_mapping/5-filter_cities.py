@@ -15,10 +15,9 @@ if __name__ == '__main__':
     db = MySQLdb.connect(host=HOST, user=MY_USER, password=MY_PSWD,
                          db=MY_DB, port=PORT)
     cur = db.cursor()
-    query = "SELECT cities.name FROM cities JOIN states ON \
+    cur.execute("SELECT cities.name FROM cities JOIN states ON \
         cities.state_id = states.id WHERE states.name LIKE %s \
-        ORDER BY cities.id", (NAME,)
-    cur.execute(query)
+        ORDER BY cities.id", (NAME,))
     rows = cur.fetchall()
     list = []
     for r in rows:
