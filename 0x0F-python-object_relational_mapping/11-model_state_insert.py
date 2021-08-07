@@ -18,9 +18,7 @@ if __name__ == '__main__':
                                .format(USER, PASS, DB), pool_pre_ping=True)
         Session = sessionmaker(bind=engine)
         session = Session()
-        toadd = State(name='Louisiana')
-        session.add(toadd)
+        add_state = State(name='Louisiana')
+        session.add(add_state)
         session.commit()
-
-        state = session.query(State).filter(State.name == 'Louisiana').first()
-        print("{}".format(state.id))
+        print(add_state.id)
