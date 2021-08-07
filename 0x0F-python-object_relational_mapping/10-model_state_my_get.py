@@ -18,9 +18,9 @@ if __name__ == '__main__':
                                .format(USER, PASS, DB), pool_pre_ping=True)
         Session = sessionmaker(bind=engine)
         session = Session()
-        state_id = session.query(State).filter(State.name == NAME).first()
-        if state_id is not None:
-            print("{}".format(state_id.id))
-        else:
+        state = session.query(State).filter(State.name == NAME).first()
+        if state is None:
             print("Not found")
+        else:
+            print(state.id)
         session.close()
