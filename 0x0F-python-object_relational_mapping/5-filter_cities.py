@@ -23,4 +23,5 @@ if __name__ == '__main__':
                 ORDER BY cities.id ASC;", (NAME,))
     row_query = cur.fetchone()
     print(row_query[0] if row_query is not None else "")
-db.close()
+    cur.close()
+    db.close()

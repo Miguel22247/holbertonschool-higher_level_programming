@@ -19,4 +19,5 @@ if __name__ == '__main__':
     row_query = cur.fetchall()
     for rq_print in row_query:
         print(rq_print)
-db.close()
+    cur.close()
+    db.close()
