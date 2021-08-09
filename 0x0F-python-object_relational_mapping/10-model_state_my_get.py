@@ -17,7 +17,7 @@ if __name__ == '__main__':
                                .format(USER, PASS, DB), pool_pre_ping=True)
         Session = sessionmaker(bind=engine)
         session = Session()
-        state_id = session.query(State).filter_by(name=argv[4]).first()
+        state_id = session.query(State).filter_by(name==argv[4]).first()
         if state_id:
             print(state_id.id)
         else:
