@@ -7,4 +7,4 @@ import sys
 
 if __name__ == '__main__':
     req_get = requests.get(sys.argv[1])
-    print(req_get.headers.get('X-Request-Id'))
+    print("{}".format(req_get.headers.get('X-Request-Id')))
