@@ -4,7 +4,7 @@
 
 import requests
 import sys
-from request.auth import HTTPBasicAuth
+from requests.auth import HTTPBasicAuth
 
 if __name__ == '__main__':
     response = requests.get('https://api.github.com/users',
