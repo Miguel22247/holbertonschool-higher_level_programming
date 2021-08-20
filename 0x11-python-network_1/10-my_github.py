@@ -3,12 +3,12 @@
 
 
 import requests
-import sys
+from sys import argv
 from requests.auth import HTTPBasicAuth
 
 if __name__ == '__main__':
     response = requests.get('https://api.github.com/user',
-                            auth=HTTPBasicAuth(sys.argv[1], sys.argv[2]))
+                            auth=HTTPBasicAuth(argv[1], argv[2]))
     if response.status_code == 200:
         dictionary = response.json()
         print(dictionary['id'])
