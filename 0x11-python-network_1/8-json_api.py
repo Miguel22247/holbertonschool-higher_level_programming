@@ -11,13 +11,13 @@ if __name__ == "__main__":
     else:
         q = ""
 
-values = {'q': q}
-request = requests.post('http://0.0.0.0:5000/search_user', data=values)
-try:
-    response = request.json()
-    if response:
-        print("[{}] {}".format(response['id'], response['name']))
-    else:
-        print("No result")
-except:
-    print("Not a valid JSON")
+    values = {'q': q}
+    request = requests.post('http://0.0.0.0:5000/search_user', data=values)
+    try:
+        response = request.json()
+        if response:
+            print("[{}] {}".format(response['id'], response['name']))
+        else:
+            print("No result")
+    except:
+        print("Not a valid JSON")
