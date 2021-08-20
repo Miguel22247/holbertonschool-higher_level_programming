@@ -11,7 +11,7 @@ if __name__ == "__main__":
     else:
         q = ""
 
-values = {'q' : q}
+values = {'q': q}
 request = requests.post('http://0.0.0.0:5000/search_user', data=values)
 try:
     response = request.json()
