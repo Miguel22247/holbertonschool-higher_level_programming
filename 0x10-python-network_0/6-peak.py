@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Program that finds the peak"""
 
+
 def find_peak(list_of_integers):
     """find a peak in a list of unsorted integers"""
     if len(list_of_integers) is 0:
