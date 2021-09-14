@@ -1,6 +1,6 @@
 #!/usr/bin/node
-const argu = process.argv;
-const url = argu[2];
+const argv = process.argv;
+const url = argv[2];
 const request = require('request');
 const dict = {};
 const results = JSON.parse(body);
