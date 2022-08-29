@@ -1,6 +1,9 @@
 # Holberton School Higher Level Programming
 The first repository writed in high level languages like python
 
+## NOTE:
+If you are a Holberton School or ALX Student and want to take this repo as Reference please star the repo 😊
+
 ## Projects
 
 ### 0x00. Python - Hello, World
